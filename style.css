@@ -299,8 +299,35 @@ body{
             .start{
                 align-items: center;
             }
-   
-          
-    
     }
-
+     @media screen and (min-width:700px) and (max-width:900px) {
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #box2 {
+            width: 700px;
+            padding: 0px 100px
+        }
+        #box3 {
+            width: 700px;
+        }
+        #box4{
+            width: 350px;
+        }
+        #box5 {
+            width: 340px;
+        }
+        #box6 {
+            width: 700px;
+        }
+        #box7 {
+           width: 700px; 
+           text-align: center;
+        }
+        #box8{
+            width: 700px;
+        }
+    }
