@@ -1,8 +1,13 @@
 
 let runH = document.getElementById("h")
+let runH_hidden = document.getElementById("h_hidden")
 let runM = document.getElementById("m")
+let runM_hidden = document.getElementById("m_hidden")
 let runS = document.getElementById("s")
+let runS_hidden = document.getElementById("s_hidden")
 let ampm = document.getElementById("namrata1")
+let ampm_hidden = document.getElementById("namrata1_hidden")
+
 let clock = () =>{
     let time = new Date();
     let hours = time.getHours();
@@ -22,7 +27,12 @@ if(hours>8 && hours<12){
   
     runH.innerHTML = hours;
     runM.innerHTML = minutes;
-    runS.innerHTML = seconds;
+    runS.innerHTML =  seconds;
+    runH_hidden.innerHTML = hours;
+   runM_hidden.innerHTML= minutes;
+   runS_hidden.innerHTML=  seconds;
+   
+  
 }
 setInterval(() =>{
     clock();

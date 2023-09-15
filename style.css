@@ -5,6 +5,7 @@
 body{
     background-color: #3D087B;
 }
+
 .container{
     
     display: flex;
@@ -66,6 +67,7 @@ body{
 }
 .deep{
     display: flex;
+    margin-top: 8px;
 }
 #box4{
     font-size: 21px;
@@ -109,6 +111,17 @@ body{
     border: 1px solid white;
     border-radius: 7px;
 }
+#box6_hidden{
+    width: 500px;
+    height: 97px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding-top: 10px;
+    border: 1px solid white;
+    border-radius: 7px;
+    display: none;
+}
 .b{
     width: 450px;
     height: 30px;
@@ -142,7 +155,7 @@ body{
     color: #3D087B;
     font-weight: bold
 }
-#namrata1{
+#namrata1,#namrata1_hidden{
     background-image: url(./AM_svg.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -215,13 +228,18 @@ body{
         #box1{
             position:absolute;
             left:25%;
-            top:10px;
+            top:15px;
         }
         #box6{
             position:absolute;
             top:130px;
             width: 330px;
             
+        }
+        #box6_hidden{
+            position:absolute;
+            top:130px;
+            width: 330px;
         }
 
         #box2{
@@ -242,6 +260,10 @@ body{
             position:absolute;
             margin-top: 200px;
             width: 180px;
+        } 
+       #box6_hidden{
+            
+            display: none;
         } 
 
         .box{
@@ -301,6 +323,10 @@ body{
             }
     }
      @media screen and (min-width:700px) and (max-width:900px) {
+        
+        .mm{
+            margin-top: 100px;
+        }
         .container{
             display: flex;
             flex-direction: column;
@@ -309,10 +335,12 @@ body{
         }
         #box2 {
             width: 700px;
-            padding: 0px 100px
+            margin-bottom: 15px;
+
         }
         #box3 {
             width: 700px;
+            margin-bottom: 10px;
         }
         #box4{
             width: 350px;
@@ -322,12 +350,20 @@ body{
         }
         #box6 {
             width: 700px;
+            display: none;
+        }
+        #box6_hidden {
+            width: 700px;
+            display: flex;
+            margin-bottom: 15px;
         }
         #box7 {
            width: 700px; 
            text-align: center;
+           margin-top: 50px;
         }
         #box8{
             width: 700px;
         }
+        
     }
